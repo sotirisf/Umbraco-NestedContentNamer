@@ -59,9 +59,9 @@ namespace DotSee.NestedContentNamer
         }
 
         /// <summary>
-        /// Applies all rules on creation of a node. 
+        /// Applies all rules
         /// </summary>
-        /// <param name="node">The newly created node we need to apply rules for</param>
+        /// <param name="node">The node we need to apply rules for</param>
         public void Run(IContent item)
         {
             //Loop through all rules
@@ -111,6 +111,7 @@ namespace DotSee.NestedContentNamer
                     int propValsTotal = allPropVals.Count();
                     int cnt = 1;
 
+                    //Iterate and add property values to generated name
                     foreach (string s in allPropVals)
                     {
                         finalGeneratedName.Append(s);
@@ -126,14 +127,9 @@ namespace DotSee.NestedContentNamer
 
                     //Reencode as JSON
                     item.Properties[r.PropertyAlias].Value = JsonConvert.SerializeObject(ncFieldData);
-
-                    //cs.Save(item, 0, false);
                 }
-
             }
-
             #endregion
-
         }
     }
 }

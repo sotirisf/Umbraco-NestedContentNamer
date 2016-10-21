@@ -13,7 +13,7 @@ namespace DotSee.NestedContentNamer
         public string GeneratedPropertyAlias { get; set; }
         public string Delimiter { get; set; }
 
-        public NestedContentNamerRule(string documentTypeToCheck, string propertyAlias, string[] ncDocProperties = null, string generatedPropertyAlias="generatedName", string delimiter = " - ")
+        public NestedContentNamerRule(string documentTypeToCheck, string propertyAlias, string generatedPropertyAlias="generatedName", string delimiter = " - ")
         {
             NcDocProperties = new Stack<string>();
             DocumentTypeToCheck = documentTypeToCheck;
