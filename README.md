@@ -1,4 +1,4 @@
-This package requires you to have the Nested Content package already installed. What it does is that it lets you allow one or more properties that Nested Content items will get their name from, including MultiNode TreePicker properties (their first selected node's value is used).
+This package requires you to have the Nested Content package already installed. What it does is that it lets you allow one or more properties that Nested Content items will get their name from, including MultiNode TreePicker properties (their first selected node's name is used).
 
 In order to use this, you will have to have a Label property in document types used by Nested Content (i.e., used as blueprints to define data for Nested Content).
 
