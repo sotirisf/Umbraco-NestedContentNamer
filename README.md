@@ -48,5 +48,5 @@ So if I have a document of type "ChristmasTree" which uses a NestedContent prope
 
 So a decoration with title "Red Ornament" and an MNTP choice of a "Spherical" node would appear as "Red Ornament - Spherical" in the item's title.
 
-
+If you find this too much of a workaround and you still want to pursue an Angular solution (which would be more appropriate since the package has originally been designed with Angular in mind), please see this thread for more: https://github.com/umco/umbraco-nested-content/issues/63
 
