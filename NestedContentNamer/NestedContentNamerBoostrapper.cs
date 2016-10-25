@@ -16,7 +16,7 @@ namespace DotSee.NestedContentNamer
         {
             foreach (var item in e.SavedEntities)
             {
-                //Test comment
+                //Test comment 1
                 NestedContentNamer.Instance.Run(item);
             }
         }
