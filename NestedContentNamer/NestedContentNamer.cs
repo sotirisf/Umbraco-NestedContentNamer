@@ -72,6 +72,9 @@ namespace DotSee.NestedContentNamer
 
                 IContentService cs = ApplicationContext.Current.Services.ContentService;
 
+                //Skip if no nested content at all
+                if (item.GetValue(r.PropertyAlias)==null) continue;
+
                 //Get the JSON value from the NC field
                 JObject[] ncFieldData = JsonConvert.DeserializeObject<JObject[]>(item.GetValue(r.PropertyAlias).ToString());
 
