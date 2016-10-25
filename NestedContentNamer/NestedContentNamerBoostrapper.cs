@@ -18,7 +18,6 @@ namespace DotSee.NestedContentNamer
             {
                 //Test comment
                 NestedContentNamer.Instance.Run(item);
-
             }
         }
     }
