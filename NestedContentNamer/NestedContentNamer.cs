@@ -99,7 +99,7 @@ namespace DotSee.NestedContentNamer
                                 break;
                             case "Umbraco.MultiNodeTreePicker":
                                 string tempId = (t.GetValue(propName) == null) ? "" : t.GetValue(propName).ToString().Split(',').First();
-                                propVal = ContentHelper.GetHelper().TypedContent(tempId).Name;
+                                propVal = (tempId != "") ? ContentHelper.GetHelper().TypedContent(tempId).Name : "";
                                 break;
                             default:
                                 propVal = string.Empty;
